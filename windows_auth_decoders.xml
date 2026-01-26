@@ -1,0 +1,15 @@
+<decoders>
+
+  <decoder name="windows_failed_logon_4625">
+    <prematch>EventID:4625</prematch>
+    <regex>Account Name:\s+(\S+)</regex>
+    <order>user</order>
+  </decoder>
+
+  <decoder name="windows_success_logon_4624">
+    <prematch>EventID:4624</prematch>
+    <regex>Account Name:\s+(\S+)</regex>
+    <order>user</order>
+  </decoder>
+
+</decoders>
