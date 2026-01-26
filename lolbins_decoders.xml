@@ -1,0 +1,8 @@
+<decoders>
+
+  <decoder name="lolbin_execution_detected">
+    <regex>(powershell|certutil|wmic|mshta|rundll32)</regex>
+    <order>process</order>
+  </decoder>
+
+</decoders>
