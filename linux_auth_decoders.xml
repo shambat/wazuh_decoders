@@ -1,0 +1,15 @@
+<decoders>
+
+  <decoder name="linux_ssh_failed_login">
+    <prematch>sshd</prematch>
+    <regex>Failed password for (invalid user )?(\S+) from (\S+)</regex>
+    <order>user srcip</order>
+  </decoder>
+
+  <decoder name="linux_ssh_success_login">
+    <prematch>sshd</prematch>
+    <regex>Accepted password for (\S+) from (\S+)</regex>
+    <order>user srcip</order>
+  </decoder>
+
+</decoders>
