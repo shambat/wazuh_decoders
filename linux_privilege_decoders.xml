@@ -1,0 +1,9 @@
+<decoders>
+
+  <decoder name="linux_sudo_command_execution">
+    <prematch>sudo</prematch>
+    <regex>(\S+) : TTY=.* ; PWD=.* ; USER=(\S+) ; COMMAND=(.*)</regex>
+    <order>user target_user command</order>
+  </decoder>
+
+</decoders>
