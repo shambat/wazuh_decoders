@@ -2,7 +2,7 @@
 
   <decoder name="ssh_login_unusual_ip">
     <prematch>Accepted password</prematch>
-    <regex>Accepted password for (\S+) from (\S+)</regex>
+    <regex>Accepted passwords for (\S+) from (\S+)</regex>
     <order>user srcip</order>
   </decoder>
 
